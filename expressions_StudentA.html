@@ -1,0 +1,32 @@
+<!DOCTYPE html><html><head><meta charset='UTF-8'><title>🟩 Student A – Vocabulary Expressions</title>
+<style>
+body { font-family: Arial; background:#f2f2f2; padding:20px; }
+.container { max-width:1200px; margin:0 auto; text-align:center; }
+.card { background:white; width:280px; padding:15px; margin:15px;
+border-radius:12px; box-shadow:0 0 10px #888; display:inline-block; vertical-align:top; text-align:left; }
+.hidden-name { cursor:pointer; background:#8e44ad; color:white; padding:10px; border-radius:8px; text-align:center; margin-bottom:10px; display:block; }
+.tips { list-style:none; padding-left:0; margin-top:10px; }
+.tips li { font-weight:bold; color:#c0392b; margin:6px 0; display:none; }
+.btn-hint { margin-top:8px; padding:8px 10px; border-radius:6px; border:none; cursor:pointer; background:#27ae60; color:white; }
+.btn-link { margin:20px auto; padding:12px 18px; border-radius:8px; border:none; cursor:pointer; background:#2980b9; color:white; font-size:18px; }
+</style>
+
+<script>
+function reveal(id){
+document.getElementById('name_'+id).style.display='block';
+document.getElementById('btn_'+id).style.display='none';
+}
+function showTip(id){
+const tips=document.querySelectorAll('#tips_'+id+' li');
+for(let i=0;i<tips.length;i++){
+if(window.getComputedStyle(tips[i]).display==='none'){
+tips[i].style.display='list-item'; return;
+}}
+const btn=document.getElementById('hintbtn_'+id);
+btn.disabled=true; btn.innerText='No more hints'; btn.style.background='#7f8c8d';
+}
+document.addEventListener('DOMContentLoaded',function(){
+document.querySelectorAll('.tips li').forEach(li=>li.style.display='none');
+});
+</script>
+</head><body><div class='container'><h1>🟩 Student A – Vocabulary Expressions</h1><button class='btn-link' onclick="window.location.href='expressions_StudentB.html'">Ir para Student B ➜</button><div class='card'><div id='btn_0' class='hidden-name' onclick='reveal(0)'>Show Word</div><h2 id='name_0' style='display:none;'>Challenging</h2><button id='hintbtn_0' class='btn-hint' onclick='showTip(0)'>Show Hint</button><ul class='tips' id='tips_0'><li>❌ difficult</li><li>❌ not easy</li><li>❌ big task</li><li>❌ takes time</li><li>❌ needs skill</li></ul></div><div class='card'><div id='btn_1' class='hidden-name' onclick='reveal(1)'>Show Word</div><h2 id='name_1' style='display:none;'>Child's play</h2><button id='hintbtn_1' class='btn-hint' onclick='showTip(1)'>Show Hint</button><ul class='tips' id='tips_1'><li>❌ very easy</li><li>❌ simple</li><li>❌ quick</li><li>❌ no problem</li><li>❌ for kids</li></ul></div><div class='card'><div id='btn_2' class='hidden-name' onclick='reveal(2)'>Show Word</div><h2 id='name_2' style='display:none;'>Demanding</h2><button id='hintbtn_2' class='btn-hint' onclick='showTip(2)'>Show Hint</button><ul class='tips' id='tips_2'><li>❌ needs a lot</li><li>❌ hard work</li><li>❌ tiring</li><li>❌ not simple</li><li>❌ strong focus</li></ul></div><div class='card'><div id='btn_3' class='hidden-name' onclick='reveal(3)'>Show Word</div><h2 id='name_3' style='display:none;'>Effortless</h2><button id='hintbtn_3' class='btn-hint' onclick='showTip(3)'>Show Hint</button><ul class='tips' id='tips_3'><li>❌ easy</li><li>❌ no work</li><li>❌ smooth</li><li>❌ quick</li><li>❌ simple</li></ul></div><div class='card'><div id='btn_4' class='hidden-name' onclick='reveal(4)'>Show Word</div><h2 id='name_4' style='display:none;'>Effort</h2><button id='hintbtn_4' class='btn-hint' onclick='showTip(4)'>Show Hint</button><ul class='tips' id='tips_4'><li>❌ work</li><li>❌ energy</li><li>❌ try hard</li><li>❌ push</li><li>❌ focus</li></ul></div><div class='card'><div id='btn_5' class='hidden-name' onclick='reveal(5)'>Show Word</div><h2 id='name_5' style='display:none;'>Exhausting</h2><button id='hintbtn_5' class='btn-hint' onclick='showTip(5)'>Show Hint</button><ul class='tips' id='tips_5'><li>❌ very tiring</li><li>❌ no energy</li><li>❌ long task</li><li>❌ hard work</li><li>❌ drains you</li></ul></div><div class='card'><div id='btn_6' class='hidden-name' onclick='reveal(6)'>Show Word</div><h2 id='name_6' style='display:none;'>Feasible</h2><button id='hintbtn_6' class='btn-hint' onclick='showTip(6)'>Show Hint</button><ul class='tips' id='tips_6'><li>❌ possible</li><li>❌ can do</li><li>❌ works</li><li>❌ ok to try</li><li>❌ not too hard</li></ul></div><div class='card'><div id='btn_7' class='hidden-name' onclick='reveal(7)'>Show Word</div><h2 id='name_7' style='display:none;'>Hard-won</h2><button id='hintbtn_7' class='btn-hint' onclick='showTip(7)'>Show Hint</button><ul class='tips' id='tips_7'><li>❌ took long</li><li>❌ needed work</li><li>❌ not easy</li><li>❌ finally got it</li><li>❌ took effort</li></ul></div><div class='card'><div id='btn_8' class='hidden-name' onclick='reveal(8)'>Show Word</div><h2 id='name_8' style='display:none;'>Manageable</h2><button id='hintbtn_8' class='btn-hint' onclick='showTip(8)'>Show Hint</button><ul class='tips' id='tips_8'><li>❌ can handle</li><li>❌ not too hard</li><li>❌ ok size</li><li>❌ possible</li><li>❌ under control</li></ul></div><div class='card'><div id='btn_9' class='hidden-name' onclick='reveal(9)'>Show Word</div><h2 id='name_9' style='display:none;'>No picnic</h2><button id='hintbtn_9' class='btn-hint' onclick='showTip(9)'>Show Hint</button><ul class='tips' id='tips_9'><li>❌ not easy</li><li>❌ hard time</li><li>❌ tough</li><li>❌ problem</li><li>❌ stressful</li></ul></div></div></body></html>
