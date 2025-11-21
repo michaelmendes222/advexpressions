@@ -1,0 +1,32 @@
+<!DOCTYPE html><html><head><meta charset='UTF-8'><title>🟦 Student B – Vocabulary Expressions</title>
+<style>
+body { font-family: Arial; background:#f2f2f2; padding:20px; }
+.container { max-width:1200px; margin:0 auto; text-align:center; }
+.card { background:white; width:280px; padding:15px; margin:15px;
+border-radius:12px; box-shadow:0 0 10px #888; display:inline-block; vertical-align:top; text-align:left; }
+.hidden-name { cursor:pointer; background:#8e44ad; color:white; padding:10px; border-radius:8px; text-align:center; margin-bottom:10px; display:block; }
+.tips { list-style:none; padding-left:0; margin-top:10px; }
+.tips li { font-weight:bold; color:#c0392b; margin:6px 0; display:none; }
+.btn-hint { margin-top:8px; padding:8px 10px; border-radius:6px; border:none; cursor:pointer; background:#27ae60; color:white; }
+.btn-link { margin:20px auto; padding:12px 18px; border-radius:8px; border:none; cursor:pointer; background:#2980b9; color:white; font-size:18px; }
+</style>
+
+<script>
+function reveal(id){
+document.getElementById('name_'+id).style.display='block';
+document.getElementById('btn_'+id).style.display='none';
+}
+function showTip(id){
+const tips=document.querySelectorAll('#tips_'+id+' li');
+for(let i=0;i<tips.length;i++){
+if(window.getComputedStyle(tips[i]).display==='none'){
+tips[i].style.display='list-item'; return;
+}}
+const btn=document.getElementById('hintbtn_'+id);
+btn.disabled=true; btn.innerText='No more hints'; btn.style.background='#7f8c8d';
+}
+document.addEventListener('DOMContentLoaded',function(){
+document.querySelectorAll('.tips li').forEach(li=>li.style.display='none');
+});
+</script>
+</head><body><div class='container'><h1>🟦 Student B – Vocabulary Expressions</h1><button class='btn-link' onclick="window.location.href='expressions_StudentA.html'">⬅ Voltar para Student A</button><div class='card'><div id='btn_100' class='hidden-name' onclick='reveal(100)'>Show Word</div><h2 id='name_100' style='display:none;'>No sweat</h2><button id='hintbtn_100' class='btn-hint' onclick='showTip(100)'>Show Hint</button><ul class='tips' id='tips_100'><li>❌ easy</li><li>❌ quick</li><li>❌ no problem</li><li>❌ simple</li><li>❌ not difficult</li></ul></div><div class='card'><div id='btn_101' class='hidden-name' onclick='reveal(101)'>Show Word</div><h2 id='name_101' style='display:none;'>Painful</h2><button id='hintbtn_101' class='btn-hint' onclick='showTip(101)'>Show Hint</button><ul class='tips' id='tips_101'><li>❌ hurts</li><li>❌ bad feeling</li><li>❌ difficult</li><li>❌ unpleasant</li><li>❌ not nice</li></ul></div><div class='card'><div id='btn_102' class='hidden-name' onclick='reveal(102)'>Show Word</div><h2 id='name_102' style='display:none;'>Painless</h2><button id='hintbtn_102' class='btn-hint' onclick='showTip(102)'>Show Hint</button><ul class='tips' id='tips_102'><li>❌ no hurt</li><li>❌ simple</li><li>❌ easy</li><li>❌ quick</li><li>❌ comfortable</li></ul></div><div class='card'><div id='btn_103' class='hidden-name' onclick='reveal(103)'>Show Word</div><h2 id='name_103' style='display:none;'>Piece of cake</h2><button id='hintbtn_103' class='btn-hint' onclick='showTip(103)'>Show Hint</button><ul class='tips' id='tips_103'><li>❌ very easy</li><li>❌ quick</li><li>❌ no problem</li><li>❌ simple</li><li>❌ light work</li></ul></div><div class='card'><div id='btn_104' class='hidden-name' onclick='reveal(104)'>Show Word</div><h2 id='name_104' style='display:none;'>Problematic</h2><button id='hintbtn_104' class='btn-hint' onclick='showTip(104)'>Show Hint</button><ul class='tips' id='tips_104'><li>❌ difficult</li><li>❌ issue</li><li>❌ trouble</li><li>❌ not easy</li><li>❌ problem</li></ul></div><div class='card'><div id='btn_105' class='hidden-name' onclick='reveal(105)'>Show Word</div><h2 id='name_105' style='display:none;'>Simple as ABC</h2><button id='hintbtn_105' class='btn-hint' onclick='showTip(105)'>Show Hint</button><ul class='tips' id='tips_105'><li>❌ very easy</li><li>❌ basic</li><li>❌ quick</li><li>❌ clear</li><li>❌ simple</li></ul></div><div class='card'><div id='btn_106' class='hidden-name' onclick='reveal(106)'>Show Word</div><h2 id='name_106' style='display:none;'>Straightforward</h2><button id='hintbtn_106' class='btn-hint' onclick='showTip(106)'>Show Hint</button><ul class='tips' id='tips_106'><li>❌ clear</li><li>❌ simple</li><li>❌ easy path</li><li>❌ no confusion</li><li>❌ direct</li></ul></div><div class='card'><div id='btn_107' class='hidden-name' onclick='reveal(107)'>Show Word</div><h2 id='name_107' style='display:none;'>Tough</h2><button id='hintbtn_107' class='btn-hint' onclick='showTip(107)'>Show Hint</button><ul class='tips' id='tips_107'><li>❌ hard</li><li>❌ strong</li><li>❌ not easy</li><li>❌ difficult</li><li>❌ big challenge</li></ul></div><div class='card'><div id='btn_108' class='hidden-name' onclick='reveal(108)'>Show Word</div><h2 id='name_108' style='display:none;'>Troublesome</h2><button id='hintbtn_108' class='btn-hint' onclick='showTip(108)'>Show Hint</button><ul class='tips' id='tips_108'><li>❌ problems</li><li>❌ annoying</li><li>❌ hard</li><li>❌ not smooth</li><li>❌ issues</li></ul></div><div class='card'><div id='btn_109' class='hidden-name' onclick='reveal(109)'>Show Word</div><h2 id='name_109' style='display:none;'>Uncomplicated</h2><button id='hintbtn_109' class='btn-hint' onclick='showTip(109)'>Show Hint</button><ul class='tips' id='tips_109'><li>❌ simple</li><li>❌ easy</li><li>❌ clear</li><li>❌ not complex</li><li>❌ basic</li></ul></div></div></body></html>
